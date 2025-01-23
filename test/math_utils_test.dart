@@ -10,7 +10,7 @@ void main() {
 
     test('subtract should return the difference of two integers', () {
       final result = subtract(10, 4);
-      expect(result, 7); // Checks if the result matches the expected value
+      expect(result, 6); // Checks if the result matches the expected value
     });
   });
 }
