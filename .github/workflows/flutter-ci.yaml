@@ -24,9 +24,15 @@ jobs:
         flutter-version: '3.22.2'  # Ensure you specify a valid Flutter version
         channel: 'stable'  # Ensure the channel is specified correctly
 
+    - name: Clearing Dependencies
+      run: flutter clean
+
     # Step 3: Install Dependencies
     - name: Install Dependencies
       run: flutter pub get
+
+    - name: Build Apk
+      run: flutter build apk --release
 
     # Step 4: Analyze Code
     - name: Analyze Code
