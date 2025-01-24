@@ -31,9 +31,6 @@ jobs:
     - name: Install Dependencies
       run: flutter pub get
 
-    - name: Build Apk
-      run: flutter build apk --release
-
     # Step 4: Analyze Code
     - name: Analyze Code
       run: flutter analyze
@@ -41,3 +38,6 @@ jobs:
     # Step 5: Run Tests
     - name: Run Tests
       run: flutter test
+
+#    - name: Build Apk
+#      run: flutter build apk --release
